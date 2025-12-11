@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АгроСемена България</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .banner-video {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+        }
+        .banner-video video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        .banner-video .banner-text {
+            position: relative;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        nav {
+            background-color: #2c7a2c;
+            color: white;
+            padding: 15px 40px;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline-flex;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav > ul > li > a,
+        .nav-right a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 6px;
+            background-color: #3aa13a;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        nav > ul > li > a:hover,
+        .nav-right a:hover {
+            background-color: #2c7a2c;
+            transform: translateY(-2px);
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #2c7a2c;
+            min-width: 200px;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li a {
+            display: block;
+            padding: 10px 15px;
+            margin: 0;
+            background-color: #2c7a2c;
+            color: white;
+            border-radius: 0;
+            font-weight: normal;
+            transition: background 0.3s;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: #1e5d1e;
+            transform: none;
+        }
+
+        .nav-right {
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cart-icon {
+            font-size: 1.3em;
+            cursor: pointer;
+        }
+
+        .crops {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 100px 20px 50px 20px;
+            background-color: #f5f5f5;
+        }
+
+        .crop {
+            width: 250px;
+            margin: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .crop:hover {
+            transform: scale(1.05);
+        }
+
+        .crop img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .crop h3 {
+            padding: 15px 10px;
+        }
+
+        footer {
+            background-color: #2c7a2c;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            .nav-right {
+                position: static;
+                transform: none;
+                margin-top: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* ❗ Допълнителна корекция за менюто при по-малки ширини */
+        @media (max-width: 1100px) {
+            nav {
+                flex-wrap: wrap;
+                padding: 15px 20px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav > ul > li > a {
+                margin: 5px;
+                padding: 8px 15px;
+            }
+
+            .nav-right {
+                position: static;
+                transform: none;
+                margin-top: 10px;
+                justify-content: center;
+            }
+        }
+        /* ❗ Край на новия код */
+
+    </style>
+</head>
+<body>
+
+    <div class="banner-video">
+        <video autoplay muted loop playsinline>
+            <source src="217768_small.mp4" type="video/mp4">
+            Вашият браузър не поддържа видео елемент.
+        </video>
+        <div class="banner-text">АгроСемена България</div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Царевица</a>
+                <ul>
+                    <li><a href="corn-hybrids.html">Хибриди</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Слънчоглед</a>
+                <ul>
+                    <li><a href="sunflower.html">Хибриди</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Пшеница</a>
+                <ul>
+                    <li><a href="wheat-winter.html">Зимна</a></li>
+                    <li><a href="wheat-summer.html">Летна</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Рапица</a>
+                <ul>
+                    <li><a href="rapeseed.html">Хибриди</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Сорго</a>
+                <ul>
+                    <li><a href="sorghum.html">Сортове</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="about.html">За нас</a>
+            <a href="contact.html">Контакт</a>
+            <a href="cart.html" class="cart-icon">🛒</a>
+        </div>
+    </nav>
+
+    <section class="crops">
+        <div class="crop">
+            <a href="corn-hybrids.html">
+                <img src="sweet-corn-2083529_1920.jpg" alt="Царевица">
+                <h3>Царевица</h3>
+            </a>
+        </div>
+        <div class="crop">
+            <a href="sunflower.html">
+                <img src="sunflower-5194553_1920.jpg" alt="Слънчоглед">
+                <h3>Слънчоглед</h3>
+            </a>
+        </div>
+        <div class="crop">
+            <a href="wheat-winter.html">
+                <img src="green-1117267_1920.jpg" alt="Зимна пшеница">
+                <h3>Пшеница – Зимна</h3>
+            </a>
+        </div>
+        <div class="crop">
+            <a href="wheat-summer.html">
+                <img src="whw.jpg" alt="Летна пшеница">
+                <h3>Пшеница – Летна</h3>
+            </a>
+        </div>
+        <div class="crop">
+            <a href="rapeseed.html">
+                <img src="field-of-rapeseeds-5059622_1920.jpg" alt="Рапица">
+                <h3>Рапица</h3>
+            </a>
+        </div>
+        <div class="crop">
+            <a href="sorghum.html">
+                <img src="sugarcane-3636924_1920.jpg" alt="Сорго">
+                <h3>Сорго</h3>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 АгроСемена България. Всички права запазени.
+    </footer>
+
+</body>
+</html>
