@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Сорго | АгроСемена България</title>
+<style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f5f5f5; }
+    nav { background-color: #2c7a2c; color: white; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+    nav ul li a { color: white; text-decoration: none; padding: 12px 18px; display: block; transition: background 0.3s; }
+    nav ul li a:hover { background-color: #1e5d1e; }
+    .nav-right a { color: white; text-decoration: none; padding: 12px 18px; font-size: 1.3em; }
+    .content { max-width: 1200px; margin: 50px auto; padding: 0 20px; }
+    h1 { color: #2c7a2c; text-align: center; margin-bottom: 40px; }
+    .hybrid-list { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
+    .hybrid { position: relative; width: 350px; background-color: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); overflow: hidden; text-align: center; transition: transform 0.3s; }
+    .hybrid:hover { transform: scale(1.03); }
+    .hybrid img { width: 100%; height: auto; object-fit: cover; }
+    .hybrid h2 { margin: 20px 0 10px 0; color: #2c7a2c; }
+    .hybrid p { padding: 0 15px 20px 15px; color: #333; font-size: 0.95em; }
+    .hybrid .btn { display: inline-block; margin: 0 0 20px 0; padding: 10px 20px; background-color: #2c7a2c; color: white; text-decoration: none; border-radius: 5px; transition: background 0.3s; }
+    .hybrid .btn:hover { background-color: #1e5d1e; }
+    .sticker { position: absolute; top: 10px; left: 10px; background-color: #e53935; color: white; padding: 5px 12px; font-weight: bold; border-radius: 4px; font-size: 0.9em; z-index: 10; }
+    footer { background-color: #2c7a2c; color: white; text-align: center; padding: 20px 10px; margin-top: 50px; }
+    @media (max-width: 768px) { .hybrid-list { flex-direction: column; align-items: center; } }
+</style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Начало</a></li>
+    </ul>
+    <div class="nav-right">
+        <a href="cart.html">🛒</a>
+    </div>
+</nav>
+
+<div class="content">
+    <h1>Сорго – Сортове</h1>
+
+    <div class="hybrid-list">
+        <!-- Първи сорт -->
+        <div class="hybrid">
+            <div class="sticker">ТОП предложение</div>
+            <img src="sr1.jpg" alt="Сорго KWS Аргус">
+            <h2>KWS Аргус</h2>
+            <p>Средноранен сорт зърнено сорго с висока добивност и стабилност при различни климатични условия. Отличава се с ниско съдържание на танин и изключителна устойчивост на полягане и болести. Подходящ за сухи райони и леки почви.</p>
+            <a href="sorghum-argus.html" class="btn">Научете повече</a>
+        </div>
+
+        <!-- Втори сорт -->
+        <div class="hybrid">
+            <img src="sr2.jpg" alt="Сорго KWS Лупус">
+            <h2>KWS Лупус</h2>
+            <p>Ранен сорт зърнено сорго с отлична енергия на покълване и бърз първоначален растеж. Има добра устойчивост на засушаване и осигурява стабилни резултати в различни региони на България. Препоръчва се за производство на зърно и фураж.</p>
+            <a href="sorghum-lupus.html" class="btn">Научете повече</a>
+        </div>
+
+        <!-- Трети сорт -->
+        <div class="hybrid">
+            <img src="sr3.jpg" alt="Сорго KWS Тарзан">
+            <h2>KWS Тарзан</h2>
+            <p>Високопродуктивен хибриден сорт за силаж и биомаса. Отличава се с мощна вегетация, висока листна маса и отлична смилаемост. Подходящ за фураж, биогаз и животновъдни стопанства, които търсят висока енергийна стойност.</p>
+            <a href="sorghum-tarzan.html" class="btn">Научете повече</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2025 АгроСемена България. Всички права запазени.
+</footer>
+
+</body>
+</html>
